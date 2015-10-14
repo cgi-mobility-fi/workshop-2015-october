@@ -45,11 +45,11 @@ Start also app2
 
 # ADDITIONAL READINGS
 
-[http://docs.spring.io/spring-amqp/reference/htmlsingle/] Spring AMQP
-[https://github.com/spring-projects/spring-integration-java-dsl/wiki/Spring-Integration-Java-DSL-Reference] Spring Integration Java DSL Reference
-[http://docs.spring.io/spring-integration/reference/html/amqp.html] Spring Integration AMQP Support
-[https://github.com/spring-projects/spring-integration-samples] Spring Integration Samples
-[https://github.com/spring-projects/spring-boot] Spring Boot and samples
-[http://12factor.net/]
-[https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance] Eureka
-[https://github.com/spring-cloud/spring-cloud-config] Sprign Cloud Config
+* [http://docs.spring.io/spring-amqp/reference/htmlsingle/] Spring AMQP
+* [https://github.com/spring-projects/spring-integration-java-dsl/wiki/Spring-Integration-Java-DSL-Reference] Spring Integration Java DSL Reference
+* [http://docs.spring.io/spring-integration/reference/html/amqp.html] Spring Integration AMQP Support
+* [https://github.com/spring-projects/spring-integration-samples] Spring Integration Samples
+* [https://github.com/spring-projects/spring-boot] Spring Boot and samples
+* [http://12factor.net/]
+* [https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance] Eureka
+* [https://github.com/spring-cloud/spring-cloud-config] Sprign Cloud Config
