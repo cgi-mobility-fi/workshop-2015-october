@@ -13,8 +13,11 @@ Slides: https://docs.google.com/presentation/d/1tqE27a9Q3YB3nvWPW74XRYhnQ0Ky775f
 - FanoutExchenge
 - TopicExchange
 
-GOAL:
-Get those topologies working end-to-end.
+RabbitMQ management URL: http://52.19.152.171:15672/ (guest/{password will be provided})
+
+GOALS:
+* Get those topologies implemented end-to-end.
+* Use Java 8 where it's possible
 
 ## Integration patterns
 - Routing
@@ -24,6 +27,11 @@ Get those topologies working end-to-end.
 - Aggregate
 - Split
 - Sprint Integration comes to rescue!
+
+GOALS:
+* Get hands-on experience
+* Use Java 8 where it's possible
+* Come up with ideas where to apply those in current applications
 
 ## Configurations
 http://localhost:8888/configuration/projectName
