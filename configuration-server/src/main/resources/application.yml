@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+endpoints:
+  restart:
+    enabled: true
+    
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git :
+          uri: https://github.com/cgi-mobility-fi/workshop-2015-configuration
+
+management:
+  context_path: /admin

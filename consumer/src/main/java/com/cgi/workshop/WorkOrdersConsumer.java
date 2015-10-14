@@ -13,4 +13,10 @@ public class WorkOrdersConsumer {
 	void onWorkOrderReceived(Message<WorkOrder> workOrder){
 		logger.info("Received workOrder: " + workOrder);
 	}
+	
+	@RabbitListener(queues = { "workorder_request_reply" })
+	public String onReceived(Message<WorkOrder> workOrder) {
+		logger.info("Received req");
+		return "Received: ";
+	}
 }

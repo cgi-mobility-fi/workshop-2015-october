@@ -41,6 +41,7 @@
     <module>configuration-server</module>
     <module>service-discovery</module>
     <module>publisher</module>
-    <module>app1</module>
+    <module>app2</module>
+    <module>spring-integration</module>
   </modules>
 </project>

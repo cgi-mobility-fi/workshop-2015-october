@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class App implements CommandLineRunner
 {
 	@Autowired
-	Publisher publisher;
+	Producer producer;
 	
     public static void main(String[] args){
     	SpringApplication.run(App.class, args);
@@ -17,7 +17,9 @@ public class App implements CommandLineRunner
 
 	@Override
 	public void run(String... args) throws Exception {
-		publisher.publish();
+		producer
+			.publishTo(PublishTypes.REQUEST_REPLY)
+			.with(() -> WorkOrderFactory.create());
 	}
     
 }
