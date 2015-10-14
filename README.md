@@ -7,6 +7,14 @@ Slides: https://docs.google.com/presentation/d/1tqE27a9Q3YB3nvWPW74XRYhnQ0Ky775f
 
 # WORKSHOP
 ## Setup environment - git clone, maven, jdk1.8
+Projects:
+* publisher: publishing logic for the queues
+* consumer: consumer logic for the queues
+* domain: common classes to be used across projects
+* spring-integration: spring integration Java DSL for working with messaging
+* service-discovery: provides service discovery with Eureka
+* configuration-server: provides configurations to connected nodes
+* app2: sample application that registers itself with Eureka and uses distributed configuration server
 ## Introduction
 ## RabbitMQ topologies
 - DirectExchange

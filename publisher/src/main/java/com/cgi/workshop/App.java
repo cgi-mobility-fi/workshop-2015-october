@@ -18,7 +18,7 @@ public class App implements CommandLineRunner
 	@Override
 	public void run(String... args) throws Exception {
 		producer
-			.publishTo(PublishTypes.REQUEST_REPLY)
+			.publishTo(PublishTypes.DIRECT_EXCHANGE)
 			.with(() -> WorkOrderFactory.create());
 	}
     
