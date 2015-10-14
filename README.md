@@ -61,5 +61,5 @@ Start also app2
 * [https://github.com/spring-projects/spring-boot] Spring Boot and samples
 * [http://12factor.net/]
 * [https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance] Eureka
-* [https://github.com/spring-cloud/spring-cloud-config] Sprign Cloud Config
+* [https://github.com/spring-cloud/spring-cloud-config] Spring Cloud Config
 
