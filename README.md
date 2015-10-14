@@ -5,13 +5,6 @@
 ----
 Slides: https://docs.google.com/presentation/d/1tqE27a9Q3YB3nvWPW74XRYhnQ0Ky775f3Z09fSJdsqA/edit?usp=sharing
 
-
-Create new Maven project:
-```
-$ mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.cgi.workshop -DartifactId=configuration-server
-```
-
-
 # WORKSHOP
 ## Setup environment - git clone, maven, jdk1.8
 ## Introduction
@@ -42,7 +35,6 @@ http://localhost:8761/
 
 Start also app2
 
-
 # ADDITIONAL READINGS
 
 * [http://docs.spring.io/spring-amqp/reference/htmlsingle/] Spring AMQP
@@ -53,3 +45,4 @@ Start also app2
 * [http://12factor.net/]
 * [https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance] Eureka
 * [https://github.com/spring-cloud/spring-cloud-config] Sprign Cloud Config
+
