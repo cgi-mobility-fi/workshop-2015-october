@@ -15,6 +15,7 @@ Projects:
 * service-discovery: provides service discovery with Eureka
 * configuration-server: provides configurations to connected nodes
 * app2: sample application that registers itself with Eureka and uses distributed configuration server
+
 ## Introduction
 ## RabbitMQ topologies
 - DirectExchange
