@@ -8,13 +8,13 @@ Slides: https://docs.google.com/presentation/d/1tqE27a9Q3YB3nvWPW74XRYhnQ0Ky775f
 # WORKSHOP
 ## Setup environment - git clone, maven, jdk1.8
 Projects:
-* publisher: publishing logic for the queues
-* consumer: consumer logic for the queues
-* domain: common classes to be used across projects
-* spring-integration: spring integration Java DSL for working with messaging
-* service-discovery: provides service discovery with Eureka
-* configuration-server: provides configurations to connected nodes
-* app2: sample application that registers itself with Eureka and uses distributed configuration server
+* __publisher__: publishing logic for the queues
+* __consumer__: consumer logic for the queues
+* __domain__: common classes to be used across projects
+* __spring-integration__: spring integration Java DSL for working with messaging
+* __service-discovery__: provides service discovery with Eureka
+* __configuration-server__: provides configurations to connected nodes
+* __app2__: sample application that registers itself with Eureka and uses distributed configuration server
 
 ## Introduction
 ## RabbitMQ topologies
@@ -24,7 +24,7 @@ Projects:
 
 RabbitMQ management URL: http://52.19.152.171:15672/ (guest/{password will be provided})
 
-GOALS:
+__GOALS__:
 * Get those topologies implemented end-to-end.
 * Use Java 8 where it's possible
 
@@ -37,7 +37,7 @@ GOALS:
 - Split
 - Sprint Integration comes to rescue!
 
-GOALS:
+__GOALS__:
 * Get hands-on experience
 * Use Java 8 where it's possible
 * Come up with ideas where to apply those in current applications
