@@ -2,12 +2,9 @@ package com.cgi.workshop.publishers;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
-import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.core.TopicExchange;
 import org.springframework.stereotype.Component;
-
-import com.cgi.workshop.Settings;
 
 @Component
 public class TopicExchangePublisher extends Publisher{
@@ -30,7 +27,7 @@ public class TopicExchangePublisher extends Publisher{
 
 	private void setUp(String name) {
 		Queue queue = new Queue(name, true);
-		DirectExchange exchange = new DirectExchange(name);
+		TopicExchange exchange = new TopicExchange(name);
 		// "*.name.*"/ "*.*.name" / "name.#"
 		Binding binding = BindingBuilder.bind(queue).to(exchange).with(name + "*.*");
 		amqpAdmin.declareQueue(queue);

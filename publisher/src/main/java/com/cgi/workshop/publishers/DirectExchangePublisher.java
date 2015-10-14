@@ -4,10 +4,7 @@ import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.support.converter.JsonMessageConverter;
 import org.springframework.stereotype.Component;
-
-import com.cgi.workshop.Settings;
 
 @Component
 public class DirectExchangePublisher extends Publisher {

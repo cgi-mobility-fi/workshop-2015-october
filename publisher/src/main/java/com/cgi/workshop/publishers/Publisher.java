@@ -9,8 +9,6 @@ import org.springframework.amqp.support.converter.JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.cgi.workshop.Settings;
-
 @Component
 public abstract class Publisher {
 	protected final Logger logger = Logger.getLogger(getClass());
@@ -20,12 +18,12 @@ public abstract class Publisher {
 	@Autowired
 	RabbitTemplate messagingTemplate;
 	
-	public void publish(Supplier<Object> payloadFunction) throws InterruptedException {
+	public void publish(Supplier<Object> payloadFunction, int publishInterval) throws InterruptedException {
 		messagingTemplate.setMessageConverter(new JsonMessageConverter());
 		
 		while(true){
 			send(payloadFunction.get());
-			Thread.sleep(Settings.PUBLISH_INTERVAL);
+			Thread.sleep(publishInterval);
 		}
 	}
 

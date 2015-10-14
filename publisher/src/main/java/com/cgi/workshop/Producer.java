@@ -14,6 +14,7 @@ import com.cgi.workshop.publishers.TopicExchangePublisher;
 public class Producer {
 	
 	private PublishTypes type = PublishTypes.DIRECT_EXCHANGE;
+	private int publishInterval = 5000;
 	
 	@Autowired
 	DirectExchangePublisher directExchangePublisher;
@@ -24,22 +25,27 @@ public class Producer {
 	@Autowired
 	RequestReplyPublisher requestReplyPublisher;
 
+	public void with(Supplier<Object> payloadFunction) throws InterruptedException{
+		switch(this.type){
+			case DIRECT_EXCHANGE:
+				directExchangePublisher.publish(payloadFunction, publishInterval);
+			case FANOUT_EXCHANGE:
+				fanoutExchangePublisher.publish(payloadFunction, publishInterval);
+			case TOPIC_EXCHANGE: 
+				topicExchangePublisher.publish(payloadFunction, publishInterval);
+			case REQUEST_REPLY:
+				requestReplyPublisher.publish(payloadFunction, publishInterval);
+		}
+	}
+	
 	public Producer publishTo(PublishTypes type) {
 		this.type = type;
 		return this;
 	}
-	
-	public void with(Supplier<Object> payloadFunction) throws InterruptedException{
-		switch(this.type){
-			case DIRECT_EXCHANGE:
-				directExchangePublisher.publish(payloadFunction);
-			case FANOUT_EXCHANGE:
-				fanoutExchangePublisher.publish(payloadFunction);
-			case TOPIC_EXCHANGE: 
-				topicExchangePublisher.publish(payloadFunction);
-			case REQUEST_REPLY:
-				requestReplyPublisher.publish(payloadFunction);
-	}
+
+	public Producer withInterval(int interval) {
+		this.publishInterval = interval;
+		return this;
 	}
 
 }

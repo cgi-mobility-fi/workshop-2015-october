@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class PayloadLogger {
 	private final Logger logger = Logger.getLogger(getClass());
 
-	@RabbitListener(queues = { Settings.WORKORDERS_CHANNEL })
+	@RabbitListener(queues = { "workorder_direct" })
 	void onMessageReceived(Message message) {
 		logger.info("Received payload: " + new String(message.getBody()));
 		logger.info("Received properties: " + message.getMessageProperties());

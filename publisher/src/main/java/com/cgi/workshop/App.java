@@ -19,6 +19,7 @@ public class App implements CommandLineRunner
 	public void run(String... args) throws Exception {
 		producer
 			.publishTo(PublishTypes.DIRECT_EXCHANGE)
+			.withInterval(1000)
 			.with(() -> WorkOrderFactory.create());
 	}
     
