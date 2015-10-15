@@ -22,6 +22,7 @@ Projects:
 - FanoutExchange
 - TopicExchange
 
+
 RabbitMQ management URL: http://52.19.152.171:15672/ (guest/{password will be provided})
 
 __GOALS__:
